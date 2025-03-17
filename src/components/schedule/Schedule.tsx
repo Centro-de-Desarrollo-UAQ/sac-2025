@@ -41,7 +41,7 @@ const Schedule = () => {
   };
 
   return (
-    <section>
+    <section id="schedules">
       {currentDay?.day !== undefined || currentDay?.events !== undefined ? (
         <div className="flex flex-col w-full p-2 justify-center items-center">
           <div className="flex flex-row row-span-2 w-full p-1 items-center h-fit justify-around">
