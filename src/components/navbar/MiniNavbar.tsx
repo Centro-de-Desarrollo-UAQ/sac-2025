@@ -42,7 +42,7 @@ const MiniNavbar: React.FC = () => {
     
     return(
         <>
-            <div id="navbar-container" className={`z-20 transition md:hidden text-xl flex w-full h-19 content-center items-center justify-between sticky top-0 ${isScrolling ? "bg-black text-white border-white" : "bg-transparent border-zinc-800"}`}>
+            <div id="navbar-container" className={`z-20 transition lg:hidden text-xl flex w-full h-19 content-center items-center justify-between sticky top-0 ${isScrolling ? "bg-black text-white border-white" : "bg-transparent border-zinc-800"}`}>
                 <div className="h-[55px] justify-start items-center gap-[15px] inline-flex">
                     <button onClick={toggleMenu} className="ml-2 flex flex-col justify-center items-center w-10 h-10 z-30">
                         <span className={`block w-6 h-0.5 mb-1.5 transition-all ${isScrolling || isMenuOpen ? "bg-white" : "bg-zinc-800"}`}></span>

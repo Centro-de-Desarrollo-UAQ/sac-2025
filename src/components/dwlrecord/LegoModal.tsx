@@ -51,13 +51,13 @@ const LegoModal = () => {
             </div>
 
             <div className="w-[140px] h-fit absolute left-1/2 -translate-x-1/2 bottom-24 mb-[86px]
-            sm:bottom-0 sm:mb-[3px] sm:absolute sm:left-38
+            sm:bottom-0 sm:mb-[3px] sm:absolute sm:left-40
             md:w-[160px] md:h-fit md:left-50">
               <BoldLego/>
             </div>
             
-            <div className="w-full h-fit absolute bottom-0 mb-[18px]
-            sm:w-fit sm:h-fit sm:right-12 sm:mt-[20px] sm:top-1/2 sm:-translate-y-1/2 sm:mb-[0px]">
+            <div className="w-full h-fit absolute bottom-0 mb-[18px] right-0
+            sm:w-fit sm:h-fit sm:right-8 sm:mt-[20px] sm:top-1/2 sm:-translate-y-1/2 sm:mb-[0px]">
               <DownloadPdfButton/>
             </div>
             
