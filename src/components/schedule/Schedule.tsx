@@ -96,7 +96,7 @@ const Schedule = () => {
           </div>
         </div>
       ) : (
-        <ErrorComponent code={505} message="Información no encontrada" />
+        <ErrorComponent code={404} message="Not found" />
       )}
     </section>
   );

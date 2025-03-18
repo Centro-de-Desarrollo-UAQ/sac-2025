@@ -1,4 +1,169 @@
 [
-  
-]
-
+    {
+      "day": "Lunes",
+      "events": [
+        {
+          "time": "9:00",
+          "items": [{ "title": "Inauguración de la SAC 2025", "place": "A01", "duration": 1 }]
+        },
+        {
+          "time": "11:00",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 }]
+        },
+        {
+          "time": "14:30",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 5 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 }]
+        },
+        {
+          "time": "15:00",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "15:30",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "16:00",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "16:30",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "17:30",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "18:30",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "19:00",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 }]
+        }
+      ]
+    },
+    {
+      "day": "Martes",
+      "events": [
+        {
+          "time": "7:00",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "7:30",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "8:00",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "8:30",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        }
+      ]
+    },
+    {
+      "day": "Miercoles",
+      "events": [
+        {
+          "time": "7:00",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "7:30",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "8:00",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "8:30",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        }
+      ]
+    },
+    {
+      "day": "Jueves",
+      "events": [
+        {
+          "time": "7:00",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "7:30",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "8:00",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        },
+        {
+          "time": "8:30",
+          "items": [{ "title": "Título de la conferencia", "place": "A01", "duration": 3 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 1 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 4 },
+          { "title": "Título de la conferencia", "place": "A01", "duration": 2 }]
+        }
+      ]
+    }
+  ]
