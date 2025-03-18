@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import gsap from "gsap";
 import LegoBlock from "./LegoBlock";
 import { createRoot } from "react-dom/client";
@@ -27,10 +28,10 @@ export default function CustomLoader() {
 
     const animateBlock = (cell: HTMLDivElement) => {
       const imageUrl = blockImages[Math.floor(Math.random() * blockImages.length)];
-    
+
       const blockContainer = document.createElement("div");
-      blockContainer.style.width = "100%"; // Ocupar todo el ancho de la celda
-      blockContainer.style.height = "100%"; // Ocupar todo el alto de la celda
+      blockContainer.style.width = "100%";
+      blockContainer.style.height = "100%";
       blockContainer.style.position = "absolute";
       blockContainer.style.top = "0";
       blockContainer.style.left = "0";
@@ -41,10 +42,10 @@ export default function CustomLoader() {
       blockContainer.style.transform = "scale(0.8)";
       cell.innerHTML = "";
       cell.appendChild(blockContainer);
-    
+
       const root = createRoot(blockContainer);
       root.render(<LegoBlock imageUrl={imageUrl} />);
-    
+
       gsap.to(blockContainer, {
         opacity: 1,
         scale: 1,
@@ -108,8 +109,10 @@ export default function CustomLoader() {
     };
   }, [isClient]);
 
-  return (
-    <div className="w-full h-full flex items-center justify-center bg-gray-50">
+  if (!isClient) return null;
+
+  return createPortal(
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-50">
       <div
         ref={gridRef}
         className="grid grid-cols-[repeat(5,minmax(0,1fr))] lg:grid-cols-[repeat(10,minmax(0,1fr))] grid-rows-[repeat(5,minmax(0,1fr))] lg:grid-rows-[repeat(10,minmax(0,1fr))] w-full h-full gap-1 p-1"
@@ -122,6 +125,7 @@ export default function CustomLoader() {
           ></div>
         ))}
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

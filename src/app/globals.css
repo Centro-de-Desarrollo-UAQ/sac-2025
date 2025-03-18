@@ -30,6 +30,7 @@
     }
 }
 
+
 #schedule-scroll::-webkit-scrollbar{
  background-color: white;
 }
@@ -44,4 +45,29 @@
 	border-radius: 10px;
   background: rgb(247,94,99);
 	background: linear-gradient(90deg, rgba(247,94,99,1) 25%, rgba(66,205,255,1) 25%, rgba(66,205,255,1) 50%, rgba(197,240,111,1) 50%, rgba(214,235,107,1) 75%, rgba(255,223,98,1) 75%, rgba(255,223,98,1) 100%);
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("/fonts/Fontspring-DEMO-cerapro-medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("/fonts/Fontspring-DEMO-cerapro-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("/fonts/Fontspring-DEMO-cerapro-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+
+  font-family: "Cera Pro", sans-serif;
 }
