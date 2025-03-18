@@ -16,18 +16,6 @@
 
     --animate-spining: spin 1s ease-in-out;
     --animate-negSpining: spinNeg 1s ease-in-out;
-
-    @keyframes spinNeg {
-        to {
-          transform: rotateX(-90deg);
-        }
-    }
-
-    @keyframes spin {
-        to {
-          transform: rotateX(90deg);
-        }
-    }
 }
 
 
@@ -45,7 +33,7 @@
 	border-radius: 10px;
   background: rgb(247,94,99);
 	background: linear-gradient(90deg, rgba(247,94,99,1) 25%, rgba(66,205,255,1) 25%, rgba(66,205,255,1) 50%, rgba(197,240,111,1) 50%, rgba(214,235,107,1) 75%, rgba(255,223,98,1) 75%, rgba(255,223,98,1) 100%);
-
+}
 @font-face {
   font-family: "Cera Pro";
   src: url("/fonts/Fontspring-DEMO-cerapro-medium.woff") format("woff");
