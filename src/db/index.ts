@@ -10,7 +10,6 @@ async function seed() {
   // Don't create seed if user already exists
   const studentSeed = await db.select().from(students).where(eq(students.expediente, 275931)).execute()
   if (studentSeed.length >= 1) {
-    console.log("Student already exists!");
     return;
   }
   const student: typeof students.$inferInsert = {

@@ -14,7 +14,7 @@ DATABASE_URL=postgres://postgres:example_db@localhost:5432/sac_db
 ```
 3. Create database container
 ```bash
-docker docker-compose up -d
+docker compose up -d
 ```
 4. Run migrations
 ```bash

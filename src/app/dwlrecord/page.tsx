@@ -1,4 +1,3 @@
-import React from 'react';
 import '../globals.css';
 import LegoModal from '@/components/dwlrecord/LegoModal';
 
