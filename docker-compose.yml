@@ -3,7 +3,7 @@ services:
     image: postgres:14.3
     restart: always
     ports:
-      - '5432:5432'
+      - '4000:5432'
     environment:
       POSTGRES_PASSWORD: example_db
       POSTGRES_DB: sac_db

@@ -6,7 +6,6 @@ import BoldLego from "./BoldLego";
 import TextBubbledwlr from "./TextBubbledwlr";
 
 
-//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
 const LegoModal = () => {
       const [isOpen, setIsOpen] = useState(false);
 

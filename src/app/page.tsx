@@ -20,10 +20,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      {isLoading ? (
-        <LegoWall />
-      ) : (
+    //<div>
+      //{isLoading ? (
+        //<LegoWall />
+      //) : (
         <main>
           <MenuSections />
           <BigAhhChicken />
@@ -34,7 +34,7 @@ export default function Home() {
               ))}
             </div>
         </main>
-      )}
-    </div>
+     //)}
+    //</div>
   );
 }

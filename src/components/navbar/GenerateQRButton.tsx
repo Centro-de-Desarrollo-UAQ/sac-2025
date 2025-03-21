@@ -7,9 +7,7 @@ export default function GenerateQrButton(){
     return (
 
 
-        <div className="w-[210px] h-[50px] rounded-[37px] border-2 flex justify-center items-center mr-4">
-        <div className="flex items-center text-ce gap-2">
-            <div data-svg-wrapper className="relative self-center">
+
                 <svg width="32" height="35" viewBox="0 0 34 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_568_735)">
                         <path d="M21.5663 0.5H13.277C11.906 0.5 10.7903 1.56558 10.7903 2.875V7.625C10.7903 8.062 11.1616 8.41667 11.6192 8.41667H23.2241C23.6817 8.41667 24.053 8.062 24.053 7.625V2.875C24.053 1.56558 22.9373 0.5 21.5663 0.5Z" fill="#FFDF62"/>
@@ -29,9 +27,6 @@ export default function GenerateQrButton(){
                         </clipPath>
                     </defs>
                 </svg>
-            </div>
-            <div className="mt-1 text-xl font-medium font-['Cera Pro'] leading-normal">GENERAR QR</div>
-        </div>
-    </div>
+
     )
 }
