@@ -4,7 +4,7 @@ export default function MenuSections(){
 
     return(
     
-        <div className="hidden  lg:block h-fit items-start gap-3 text-lg w-fit justify-between ml-20 mt-70 absolute z-1 ">
+        <div className="hidden scroll-smooth  lg:block h-fit items-start gap-3 text-lg w-fit justify-between ml-20 mt-70 absolute z-1 ">
             
                 <div className=" mb-1 w-fit  justify-start items-center gap-[15px] flex transition-all duration-100 hover:scale-106">
                     <a href="#section-1" className="w-fit justify-start items-center gap-[15px] flex ">
