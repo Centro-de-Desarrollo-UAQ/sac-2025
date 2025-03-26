@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { StaticCanvas, FabricText } from 'fabric';
+import Swal from 'sweetalert2';
 
 import qrbg from '@/assets/QRCard.png';
 import qricon from '@/assets/qr-block-icon.png';
@@ -167,11 +168,17 @@ export default function Page() {
             },
             body: JSON.stringify({
                 lego_image: dataUrl,
-                nombre: 'QR'
+                url_image: `/cardgenerator/${userId}/${headwearId}/${headId}/${patternId}/${playerColor}/${patternTone}`
             })
         }).then(async (res) => {
             const data = await res.json();
-            console.log(data);
+            Swal.fire({
+                icon: 'success',
+                title: data.message,
+                text: '¡Tu tarjeta ha sido registrada!',
+                showConfirmButton: false,
+                timer: 2000
+            });
         }).catch((err) => {
             console.error(err);
         });
@@ -192,9 +199,9 @@ export default function Page() {
                 onClick={() => uploadImage()}
                 className="w-full md:w-fit relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
             >
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#F59CA9_0%,#DF57BC_50%,#F59CA9_100%)]" />
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#7DDE92_0%,#037171_50%,#7DDE92_100%)]" />
                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                    Subir Imagen
+                    Registrar Imagen
                 </span>
             </button>
 

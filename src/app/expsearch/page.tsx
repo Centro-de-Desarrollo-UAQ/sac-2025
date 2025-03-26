@@ -20,29 +20,42 @@ export default function Page() {
     setIsLoading(true);
 
     // Fetch the student data
-    fetch(`/api/records/${code}`)
+    fetch(`/api/qr-image/${code}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.error) {
           Swal.fire({
             icon: 'warning',
-            title: `¿Estás seguro que deseas registrar el expediente ${code}?`,
-            text: 'Una vez creado el QR, no podrás modificarlo',
+            title: `¿Estás seguro que éste es tu expediente?`,
+            text: code,
             showCancelButton: true,
             confirmButtonText: 'Sí, registrar',
             cancelButtonText: 'Cancelar',
-          }).then((result) => {
+          }).then((result: any) => {
             if (result.isConfirmed) {
               setIsLoading(true);
               router.push(`/charactereditor/${code}`);
             }
           });
-
           setIsLoading(false);
           return;
         }
 
-        router.push(`/charactereditor/${code}`);
+        Swal.fire({
+          icon: 'info',
+          title: 'Expediente encontrado',
+          text: '¿Deseas visualizar tu tarjeta o editar tu personaje?',
+          showCancelButton: true,
+          confirmButtonText: 'Visualizar',
+          cancelButtonText: 'Editar',
+        }).then((result) => {
+          if(result.isConfirmed) {
+            router.push(data.url_image);
+          }
+          else if(result.dismiss === Swal.DismissReason.cancel) {
+            router.push(`/charactereditor/${code}`);
+          }
+        });
       })
       .catch((err) => {
         console.error(err);
