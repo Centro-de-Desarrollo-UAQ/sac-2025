@@ -102,21 +102,6 @@ export default function Page() {
           </div>
         </form>
       </div>
-      <style jsx>{`
-        .loader {
-          border: 3px solid white;
-          border-top: 3px solid transparent;
-          border-radius: 50%;
-          width: 16px;
-          height: 16px;
-          animation: spin 0.8s linear infinite;
-        }
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-        .stac
-      `}</style>
     </div>
   );
 }

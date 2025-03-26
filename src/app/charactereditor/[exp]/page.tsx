@@ -16,7 +16,8 @@ import { patternThumbnails } from "@/components/character-editor/pattern-thumbna
 import torso from "@/assets/character-editor/body/torso.png";
 import hands from "@/assets/character-editor/body/hands.png";
 
-export default function Page() {  
+export default function Page() {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const params = useParams();
   const exp = params.exp as string;
   const router = useRouter();
@@ -65,6 +66,25 @@ export default function Page() {
     { key: "clothe", src: "/shirt-icon.png" },
     { key: "headwear", src: "/hair-icon.png" },
   ];
+
+  const finishCharacter = () => {
+    setIsLoading(true);
+    router.push(
+      `/cardgenerator/${
+        exp
+      }/${
+        selectedParts.head.id
+      }/${
+        selectedParts.headwear?.id
+      }/${
+        selectedParts.clothe?.id
+      }/${
+        color.toString("hex").split("#")[1]
+      }/${
+        semantic
+      }`
+    );
+  }
 
   useEffect(() => {
     soundRefs.current = Array.from(
@@ -279,35 +299,24 @@ export default function Page() {
       <div className="w-full md:w-2/3 xl:w-1/2 mb-4 flex justify-end">
         <button
           type="button"
-          onClick={() =>
-            router.push(
-              `/cardgenerator/${
-                exp
-              }/${
-                selectedParts.head.id
-              }/${
-                selectedParts.headwear?.id
-              }/${
-                selectedParts.clothe?.id
-              }/${
-                color.toString("hex").split("#")[1]
-              }/${
-                semantic
-              }`
-            )
-          }
-          className="w-full md:w-auto flex group items-center justify-center gap-2 bg-blacksac text-white font-bold py-2 px-4 rounded-full uppercase cursor-pointer transition-all duration-200 hover:text-yellow-300 hover:scale-105"
+          onClick={() => finishCharacter()}
+          className={`w-full md:w-auto flex group items-center justify-center gap-2 bg-blacksac text-white font-bold py-2 px-4 rounded-full uppercase cursor-pointer transition-all duration-200 hover:text-yellow-300 hover:scale-105 ${isLoading ? "cursor-not-allowed opacity-50" : ""}`}
+          disabled={isLoading}
         >
           ¡Terminé!
-          <svg
-            className="w-4 h-4 fill-white transition-all duration-200 group-hover:fill-yellow-300 group-hover:scale-105"
-            viewBox="0 0 33 38"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M25.5 0.5H7.5V6.5H25.5V0.5Z" />
-            <path d="M33 6.5H0V37.5H33V6.5Z" />
-          </svg>
+          {isLoading ? (
+            <span className="loader"></span>
+          ) : (
+            <svg
+              className="w-4 h-4 fill-white transition-all duration-200 group-hover:fill-yellow-300 group-hover:scale-105"
+              viewBox="0 0 33 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M25.5 0.5H7.5V6.5H25.5V0.5Z" />
+              <path d="M33 6.5H0V37.5H33V6.5Z" />
+            </svg>
+          )}
         </button>
       </div>
     </div>
