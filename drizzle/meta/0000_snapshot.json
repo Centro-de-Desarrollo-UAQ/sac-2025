@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 {
-<<<<<<< HEAD
   "id": "de6e2436-71eb-4f4e-8a99-87fb6eb6ae2a",
-=======
-  "id": "557ec831-a826-44b9-b866-e8110b99ced4",
->>>>>>> c1b09e1aa9aa7b9037e752da09a29205edad22db
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -19,15 +14,12 @@
           "primaryKey": true,
           "notNull": true
         },
-<<<<<<< HEAD
         "nombre": {
           "name": "nombre",
           "type": "varchar(100)",
           "primaryKey": false,
           "notNull": true
         },
-=======
->>>>>>> c1b09e1aa9aa7b9037e752da09a29205edad22db
         "lego_image": {
           "name": "lego_image",
           "type": "text",
@@ -157,7 +149,6 @@
     "schemas": {},
     "tables": {}
   }
-=======
 {
   "id": "557ec831-a826-44b9-b866-e8110b99ced4",
   "prevId": "00000000-0000-0000-0000-000000000000",
@@ -303,5 +294,4 @@
     "schemas": {},
     "tables": {}
   }
->>>>>>> 0a26ecef0e977cf4637d450173cb6c368b7462da
 }

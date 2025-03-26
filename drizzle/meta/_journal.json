@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "version": "7",
   "dialect": "postgresql",
@@ -6,17 +5,11 @@
     {
       "idx": 0,
       "version": "7",
-<<<<<<< HEAD
       "when": 1742947523309,
       "tag": "0000_vengeful_spiral",
-=======
-      "when": 1742938271174,
-      "tag": "0000_mysterious_ultimatum",
->>>>>>> c1b09e1aa9aa7b9037e752da09a29205edad22db
       "breakpoints": true
     }
   ]
-=======
 {
   "version": "7",
   "dialect": "postgresql",
@@ -36,5 +29,4 @@
       "breakpoints": true
     }
   ]
->>>>>>> 0a26ecef0e977cf4637d450173cb6c368b7462da
 }
