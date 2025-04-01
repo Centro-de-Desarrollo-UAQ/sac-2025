@@ -47,14 +47,18 @@
       "events": [
         {
           "time": "9:00",
-          "items": [{ "title": "Hacer que las cosas sucedan", "place": "Auditorio", "duration": [1, 4] },
-          { "title": "Inteligencia Artificial Generativa en Proyectos Empresariales", "place": "Sala de Usos Múltiples", "duration": [1, 4] },
-          { "title": "Taller de Drones Autónomos", "place": "-", "duration": [1, 4] }]
+          "items": [{ "title": "Hacer que las cosas sucedan", "place": "Auditorio", "duration": [1, 5] },
+          { "title": "Inteligencia Artificial Generativa en Proyectos Empresariales", "place": "Sala de Usos Múltiples", "duration": [1, 5] },
+          { "title": "Drones Autónomos", "place": "Taller", "duration": [3, 2] }]
         },
         {
           "time": "10:30",
-          "items": [{ "title": "Liderazgo en las organizaciones para el desarrollo de las Green Skills", "place": "Auditorio", "duration": [1, 6]},
-          { "title": "Concurso de Fotografía ", "place": "Edificio de Innovación", "duration": [1, 6] }]
+          "items": [{ "title": "Liderazgo en las organizaciones para el desarrollo de las Green Skills", "place": "Auditorio", "duration": [2, 5]},
+          { "title": "Laboratorio Nacional de Ingeniería Espacial", "place": "Sala de Usos Múltiple", "duration": [2, 5] }]
+        },
+        {
+          "time":"11:00",
+          "items": []
         },
         {
           "time": "12:00",
@@ -63,30 +67,27 @@
         },
         {
           "time": "13:30",
-          "items": [{ "title": "Emprendimiento en el mundo Nativo", "place": "Auditorio", "duration": [2,6]},
-          { "title": "Radio Frecuencia by Huawei", "place": "Sala de Usos Múltiples", "duration": [2,6] }]
+          "items": [{ "title": "Emprendimiento en el mundo Nativo", "place": "Auditorio", "duration": [1,6]},
+          { "title": "Radio Frecuencia", "place": "Sala de Usos Múltiples", "duration": [1,6] }]
         },
         {
           "time": "15:00",
-          "items": []
+          "items": [{ "title": "Comunicación Efectiva", "place": "Taller", "duration": [1,2] },
+          { "title": "Prototipado en Figma", "place": "Taller", "duration": [1,2] },
+          { "title": "Blender Desde Cero", "place": "Taller", "duration": [1,2] },
+          { "title": "ThreeJS", "place": "Taller", "duration": [1,1] },
+          { "title": "PMI Kickoff", "place": "Taller", "duration": [1,1] },
+          { "title": "Expresión Artística y Relajación con Lego", "place": "Taller", "duration": [1,2] },
+          { "title": "Obsidian", "place": "Taller", "duration": [1,2] }]
         },
         {
           "time": "17:00",
-          "items": [{ "title": "Taller de Comunicación Efectiva", "place": "-", "duration": [1,2] },
-          { "title": "Prototipado en Figma", "place": "-", "duration": [1,2] },
-          { "title": "Blender Desde Cero", "place": "-", "duration": [1,2] },
-          { "title": "ThreeJS", "place": "-", "duration": [1,1] },
-          { "title": "PMI Kickoff", "place": "-", "duration": [1,1] },
-          { "title": "Expresión Artística y Relajación con Lego", "place": "-", "duration": [1,2] },
-          { "title": "Bibliorelato", "place": "Auditorio", "duration": [1,2] }]
+          "items": [{ "title": "Vi-Bliorelato", "place": "Sala de Usos Múltiples", "duration": [1,12] }]
         },
         {
           "time": "18:30",
-          "items": [{ "title": "Diálogo con Egresados", "place": "-", "duration": [2,12] }]
-        },
-        {
-          "time": "20:00",
-          "items": []
+          "items": [{"title": "Diálogo con Egresados", "place": "Comal++", "duration": [1, 6]},
+          {"title": "Saxoservidores", "place": "Laboratorio de Software", "duration": [1, 6]}]
         }]
     },
     {
@@ -94,39 +95,57 @@
       "events": [
         {
           "time": "9:00",
-          "items": [{ "title": "Maestras Vs. Estudiantes", "place": "-", "duration": [3, 2] },
-          { "title": "Maestros Vs. Estudiantes", "place": "-", "duration": [3, 2] }]
+          "items": [{ "title": "Maestras Vs. Estudiantes", "place": "Deportes", "duration": [3, 2] },
+          { "title": "Maestros Vs. Estudiantes", "place": "Deportes", "duration": [3, 2] }]
         },
         {
           "time": "10:00",
           "items": [
-            { "title": "Taller de Fibra Óptica", "place": "Lab de Telecomunicaciones", "duration": [3,3] }
+            { "title": "Fibra Óptica", "place": "Taller", "duration": [3,2] }
           ]
         },
         {
           "time": "10:30",
           "items": [
-            { "title": "Tendencias de Tecnologías de la Información", "place": "Auditorio", "duration": [2,3] },
-          { "title": "Sabios Troyanos Vs. Alumnos", "place": "-", "duration": [2,3] }
+            { "title": "Tendencias de Tecnologías de la Información", "place": "Auditorio", "duration": [2,2] },
+          { "title": "Sabios Troyanos Vs. Alumnos", "place": "Deportes", "duration": [2,2] },
+          { "title": "Concurso de Fotografía", "place": "Edificio de Innovación", "duration": [2,2] }
+          ]
+        },
+        {
+          "time": "11:00",
+          "items": [
+            {"title": "Concurso de Papalotes", "place": "-", "duration": [1,4]}
           ]
         },
         {
           "time": "12:00",
-          "items": [{ "title": "Procurement & IT", "place": "Sala de Usos Múltiples", "duration": [1,3] },
-          { "title": "Troyano Power", "place": "-", "duration": [1,1] }]
+          "items": [{ "title": "Procurement & IT", "place": "Sala de Usos Múltiples", "duration": [2,6] },
+          { "title": "Troyano Power", "place": "Deportes", "duration": [2,6] }]
+        },
+        {
+          "time": "13:30",
+          "items": []
         },
         {
           "time": "14:00",
-          "items": [{ "title": "Star Game Fut Beis", "place": "-", "duration": [1,12]}]
+          "items": [{ "title": "All-Star Game", "place": "Deportes", "duration": [1,12]}]
+        },
+        {
+          "time": "15:00",
+          "items": [
+            { "title": "Blender Desde Cero", "place": "Taller", "duration": [2,4] },
+            { "title": "ThreeJS", "place": "Taller", "duration": [2,4] }
+          ]
         },
         {
           "time": "16:00",
-          "items": [{ "title": "Final de Torneo de Videojuegos", "place": "-", "duration": [1,12]}]
+          "items": [{ "title": "Final de Torneo de Videojuegos", "place": "Deportes", "duration": [1,4]}]
         },
         {
           "time": "17:00",
           "items": [
-          { "title": "Carrera Troyana", "place": "-", "duration": [1,12] }]
+          { "title": "Carrera Troyana", "place": "Deportes", "duration": [1,12] }]
         },
         {
           "time": "18:30",
@@ -142,27 +161,35 @@
       "events": [
         {
           "time": "9:00",
-          "items": [{ "title": "Web Services DC Queretaro by Amazon", "place": "Sala de Usos Múltiples", "duration": [1, 12] }]
+          "items": [{ "title": "Web Services DC Queretaro", "place": "Sala de Usos Múltiples", "duration": [2, 6] }]
+        },
+        {
+          "time": "10:00",
+          "items": [{ "title": "Concurso de Talentos", "place": "Coliseo", "duration": [2, 6] }]
         },
         {
           "time": "10:30",
-          "items": [{ "title": "Concurso de Talentos", "place": "Coliseo", "duration": [2, 12] }]
+          "items": [{ "title": "Lo que no se ve, también se mide: Análisis del espectro.", "place": "Sala de Usos Múltiple", "duration": [2, 6] }]
         },
         {
-          "time": "10:30",
-          "items": [{ "title": "Lo que no se ve, también se mide: Análisis del espectro.", "place": "Sala de Usos Múltiple", "duration": [2, 12] }]
-        },
-        {
-          "time": "13:00",
+          "time": "12:00",
           "items": []
         },
         {
           "time": "13:30",
-          "items": [{ "title": "Clausura", "place": "Coliseo", "duration": [1,12]}]
+          "items": [{ "title": "Clausura", "place": "Coliseo", "duration": [2,12]}]
+        },
+        {
+          "time": "",
+          "items": []
         },
         {
           "time": "14:00",
-          "items": [{ "title": "Comida", "place": "Coliseo", "duration": [1,12]}]
-        }]
+          "items": [{ "title": "Comida", "place": "Coliseo", "duration": [2,12]}]
+        },
+      {
+        "time": "19:00",
+        "items": []
+      }]
     }
   ]
